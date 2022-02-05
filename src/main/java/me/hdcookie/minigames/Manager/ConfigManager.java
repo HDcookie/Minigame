@@ -24,7 +24,7 @@ public class ConfigManager {
     public static int getCountdown() {return config.getInt("countdown-seconds");}
 
     public static Location getLobby() {
-        Location loc = new Location(Bukkit.getWorld(config.getString("lobby-spawn")),
+        Location loc = new Location(Bukkit.getWorld(config.getString("lobby-spawn.world")),
                 config.getDouble("lobby-spawn.x"),
                 config.getDouble("lobby-spawn.y"),
                 config.getDouble("lobby-spawn.z"),

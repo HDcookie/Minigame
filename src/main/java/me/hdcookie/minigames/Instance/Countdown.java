@@ -32,8 +32,8 @@ public class Countdown extends BukkitRunnable {
             return;
         }
         if(countdown <= 10 || countdown % 15 == 0){
-            arena.sendMessage(ChatColor.DARK_GREEN+ "Game will start in" + countdown + "second" + (countdown == 1 ? "" : "s") + ".");
-            arena.sendTitle(ChatColor.DARK_GREEN+ "Game starting in"+ countdown, ChatColor.DARK_GRAY+"second" + (countdown == 1 ? "" : "s") + ".");
+            arena.sendMessage(ChatColor.DARK_GREEN+ "Game will start in " + countdown + "second" + (countdown == 1 ? "" : "s") + ".");
+            arena.sendTitle(ChatColor.DARK_GREEN+ "Game starting in "+ countdown, ChatColor.DARK_GRAY+"second" + (countdown == 1 ? "" : "s") + ".");
         }
 
         countdown--;

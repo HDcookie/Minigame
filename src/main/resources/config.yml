@@ -1,24 +1,24 @@
 required-players: 2
 countdown-seconds: 30
 lobby-spawn:
-  world: 'world'
-  x: 100
-  y: 100
-  z: 100
-  yaw: 180
-  pitch: 180
+  world: "world"
+  x: 100.5
+  y: 100.5
+  z: 100.5
+  yaw: 90
+  pitch: 0
 arenas:
   0:
-    world: 'world'
-      x: 120
-      y: 100
-      z: 120
-      yaw: 180
-      pitch: 180
+    world: "world"
+    x: 120.5
+    y: 100.5
+    z: 120.5
+    yaw: 90
+    pitch: 0
   1:
-    world: 'world'
-      x: 150
-      y: 100
-      z: 150
-      yaw: 180
-      pitch: 180
+    world: "world"
+    x: 150.5
+    y: 100.5
+    z: 150.5
+    yaw: 90
+    pitch: 0

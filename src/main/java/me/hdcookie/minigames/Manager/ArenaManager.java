@@ -17,9 +17,10 @@ public class ArenaManager {
     public ArenaManager (Minigames minigames){
         FileConfiguration config = ConfigManager.getConfig();
         //Looping through each arena, string being the arena name
-        for(String string : config.getConfigurationSection("arenas.").getKeys(false)){
+        for(String string : config.getConfigurationSection("arenas").getKeys(false)){
+            Bukkit.broadcastMessage(string + "Uhhh um lemme think o right the arena");
             //Adds it, just a ton of location adding stuff
-            arenas.add(new Arena(minigames,Integer.parseInt(string), new Location(Bukkit.getWorld(config.getString("lobby-spawn")),
+            arenas.add(new Arena(minigames,Integer.parseInt(string), new Location(Bukkit.getWorld(config.getString("lobby-spawn.world")),
                     config.getDouble("arenas."+string+".x"),
                     config.getDouble("arenas."+string+".y"),
                     config.getDouble("arenas."+string+".z"),
