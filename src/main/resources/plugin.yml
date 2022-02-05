@@ -1,0 +1,9 @@
+name: Minigames
+version: '${project.version}'
+main: me.hdcookie.minigames.Minigames
+api-version: 1.18
+prefix: [ Minigames ]
+authors: [ HDcookie ]
+description: This is a test minigame plugin
+commands:
+  arena:
