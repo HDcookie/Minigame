@@ -14,10 +14,11 @@ public final class Minigames extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        Bukkit.getConsoleSender().sendMessage("HIIIIIIIi new minigame ig idk.  ");
+        Bukkit.getConsoleSender().sendMessage("New minigame loaded");
 
         ConfigManager.setupConfig(this);
         arenaManager = new ArenaManager(this);
+        System.out.println("Hi ");
 
         Bukkit.getPluginManager().registerEvents(new ConnectListener(this), this);
         Bukkit.getPluginManager().registerEvents(new GameListener(this), this);
