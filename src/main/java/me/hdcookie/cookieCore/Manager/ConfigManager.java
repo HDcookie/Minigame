@@ -1,6 +1,6 @@
-package me.hdcookie.minigames.Manager;
+package me.hdcookie.cookieCore.Manager;
 
-import me.hdcookie.minigames.Minigames;
+import me.hdcookie.cookieCore.CookieCore;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.configuration.file.FileConfiguration;
@@ -9,9 +9,9 @@ public class ConfigManager {
 
     private static FileConfiguration config;
 
-    public static void setupConfig(Minigames minigames){
-        ConfigManager.config = minigames.getConfig();
-        minigames.saveDefaultConfig();
+    public static void setupConfig(CookieCore cookieCore){
+        ConfigManager.config = cookieCore.getConfig();
+        cookieCore.saveDefaultConfig();
 
     }
 

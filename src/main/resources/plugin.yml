@@ -1,9 +1,11 @@
-name: Minigames
-version: '${project.version}'
-main: me.hdcookie.minigames.Minigames
+name: CookieCore
+version: '1.0'
+main: me.hdcookie.cookieCore.CookieCore
 api-version: 1.18
 prefix: [ Minigames ]
 authors: [ HDcookie ]
 description: This is a test minigame plugin
 commands:
   arena:
+  worlds:
+  items:

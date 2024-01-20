@@ -1,27 +1,27 @@
-package me.hdcookie.minigames.Instance;
+package me.hdcookie.cookieCore.Instance;
 
-import me.hdcookie.minigames.GameState;
-import me.hdcookie.minigames.Manager.ConfigManager;
-import me.hdcookie.minigames.Minigames;
+import me.hdcookie.cookieCore.GameState;
+import me.hdcookie.cookieCore.Manager.ConfigManager;
+import me.hdcookie.cookieCore.CookieCore;
 import org.bukkit.ChatColor;
 import org.bukkit.scheduler.BukkitRunnable;
 
 public class Countdown extends BukkitRunnable {
 
-    private Minigames minigames;
+    private CookieCore cookieCore;
     private Arena arena;
     private int countdown;
 
-    public Countdown(Minigames minigames, Arena arena){
+    public Countdown(CookieCore cookieCore, Arena arena){
         this.arena = arena;
-        this.minigames = minigames;
+        this.cookieCore = cookieCore;
         this.countdown = ConfigManager.getCountdown();
 
     }
 
     public void start(){
         arena.setState(GameState.COUNTDOWN);
-        runTaskTimer(minigames, 0, 20);
+        runTaskTimer(cookieCore, 0, 20);
     }
 
     @Override

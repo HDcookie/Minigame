@@ -1,5 +1,6 @@
 required-players: 2
 countdown-seconds: 30
+tp-on-join: false
 lobby-spawn:
   world: "world"
   x: 100.5
@@ -22,3 +23,6 @@ arenas:
     z: 150.5
     yaw: 90
     pitch: 0
+worlds:
+  hub:
+    material: "GOLD_BLOCK"

@@ -1,6 +1,6 @@
-package me.hdcookie.minigames.Instance;
+package me.hdcookie.cookieCore.Instance;
 
-import me.hdcookie.minigames.GameState;
+import me.hdcookie.cookieCore.GameState;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 

@@ -1,8 +1,8 @@
-package me.hdcookie.minigames.Instance;
+package me.hdcookie.cookieCore.Instance;
 
-import me.hdcookie.minigames.GameState;
-import me.hdcookie.minigames.Manager.ConfigManager;
-import me.hdcookie.minigames.Minigames;
+import me.hdcookie.cookieCore.GameState;
+import me.hdcookie.cookieCore.Manager.ConfigManager;
+import me.hdcookie.cookieCore.CookieCore;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Location;
@@ -15,7 +15,7 @@ import java.util.UUID;
 public class Arena {
 
     //Class lvl variables
-    private Minigames minigames;
+    private CookieCore cookieCore;
     private int id;
     private Location spawn;
     private GameState state;
@@ -24,15 +24,15 @@ public class Arena {
     private Game game;
 
     //Constructor
-    public Arena(Minigames minigames, int id, Location spawn){
-        this.minigames = minigames;
+    public Arena(CookieCore cookieCore, int id, Location spawn){
+        this.cookieCore = cookieCore;
 
         this.id = id;
         this.spawn = spawn;
 
         this.state = GameState.RECRUITING;
         this.players = new ArrayList<>();
-        this.countdown = new Countdown(minigames, this);
+        this.countdown = new Countdown(cookieCore, this);
         this.game = new Game(this);
     }
     //Players
@@ -94,7 +94,7 @@ public class Arena {
         sendTitle("","");
         state = GameState.RECRUITING;
         countdown.cancel();
-        countdown = new Countdown(minigames, this);
+        countdown = new Countdown(cookieCore, this);
         game = new Game(this);
     }
 

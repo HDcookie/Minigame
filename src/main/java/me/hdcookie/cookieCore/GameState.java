@@ -1,4 +1,4 @@
-package me.hdcookie.minigames;
+package me.hdcookie.cookieCore;
 
 public enum GameState {
 
