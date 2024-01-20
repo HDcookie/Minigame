@@ -20,6 +20,7 @@ public final class CookieCore extends JavaPlugin {
     private ArenaManager arenaManager;
     private DatabaseManager databaseManager;
 
+    //pls work
 
     @Override
     public void onEnable() {
